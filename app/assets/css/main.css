@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=League+Spartan:wght@100..900&display=swap');
@@ -9,4 +9,5 @@
     --font-cinzelDeco: "Cinzel Decorative", serif;
     --font-spartan: "League Spartan", sans-serif;
     --font-cormorant: "Cormorant Infant", serif;
+    --font-crimson: "Crimson Text", serif;
 }
