@@ -163,6 +163,25 @@
 
           </div>
          </section>
+
+        <!-- NAVBAR (REQUIRES SCRIPT) -->
+        <div class="fixed bottom-0 left-1/2 -translate-x-1/2 flex items-center w-screen max-w-md text-center text-white bg-gray-900 z-40 gray-glass h-[4.4rem]" style="background-color: rgba(190, 80, 113, 0.733); color: rgb(255, 255, 255);">
+          <div class="flex-1 cursor-pointer">
+            <p class="text-xs">Hubungi</p>
+          </div>
+          <div class="flex-1 cursor-pointer">
+            <p class="text-xs">Kalendar</p>
+          </div>
+          <NuxtLink to="/rsvp" class="flex-1 cursor-pointer">
+            <p class="text-xs">RSVP</p>
+          </NuxtLink>
+          <div class="flex-1 cursor-pointer">
+            <p class="text-xs">Hadiah</p>
+          </div>
+          <div class="flex-1 cursor-pointer">
+            <p class="text-xs">Lokasi</p>
+          </div>
+        </div>
       </div>
 
     </div>
