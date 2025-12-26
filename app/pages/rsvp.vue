@@ -451,7 +451,7 @@ async function onSubmit() {
                         <div class="relative w-64 h-64 border border-gray-200 rounded-lg overflow-hidden">
                             <div class="w-full h-full flex items-center justify-center text-gray-400">
                                 <img 
-                                    src="~/assets/images/qrCode.png" 
+                                    src="~/assets/images/QRCode.png" 
                                     alt="QR Code" 
                                     class="w-full h-full object-contain"/>
                             </div>
