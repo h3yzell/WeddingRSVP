@@ -266,19 +266,19 @@ const startInfiniteScroll = () => {
          <section class="grid grid-cols-2 gap-x-2">
           <img 
             class="w-40 rounded-lg shadow-lg mb-2 animate-hidden"
-            src="~/assets/images/img1.jpg" 
+            src="~/assets/images/img1.JPG" 
           >
           <img 
             class="w-40 rounded-lg shadow-lg mb-2 animate-hidden"
-            src="~/assets/images/img4.jpg" 
+            src="~/assets/images/img4.JPG" 
           >
           <img 
             class="w-40 rounded-lg shadow-lg mb-2 animate-hidden"
-            src="~/assets/images/img3.jpg" 
+            src="~/assets/images/img3.JPG" 
           >
           <img 
             class="w-40 rounded-lg shadow-lg mb-2 animate-hidden"
-            src="~/assets/images/img2.jpg" 
+            src="~/assets/images/img2.JPG" 
           >
          </section>
         
