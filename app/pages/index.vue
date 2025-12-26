@@ -321,53 +321,46 @@ const startInfiniteScroll = () => {
         </footer>
         
         <!-- NAVBAR -->
-        <div class="fixed bottom-0 left-1/2 -translate-x-1/2 flex items-center w-screen max-w-md text-center text-gray-700 bg-[#FBFBFB] z-40 h-[4.4rem] shadow-[0_-5px_10px_rgba(0,0,0,0.05)]">
-          <div 
-            @click="callPopup" 
-            :class="[
-            'flex-1 cursor-pointer', clickOnCall ? 'text-[#d44a7d]' : 'text-gray-700',
-            ]">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6 ml-8 mb-1">
+        <div class="fixed bottom-0 left-1/2 -translate-x-1/2 flex items-center w-screen max-w-md text-gray-700 bg-[#FBFBFB] z-40 h-[4.4rem] shadow-[0_-5px_10px_rgba(0,0,0,0.05)]">
+  
+          <div @click="callPopup" 
+            :class="['flex-1 flex flex-col items-center justify-center cursor-pointer', clickOnCall ? 'text-[#d44a7d]' : 'text-gray-700']">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6 mb-1">
               <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
             </svg>
             <p class="text-xs">Contact</p>
           </div>
-          <div 
-            @click="calendarPopup" 
-            :class="[
-            'flex-1 cursor-pointer', clickOnCalendar ? 'text-[#d44a7d]' : 'text-gray-700',
-            ]">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6 ml-8 mb-1">
+
+          <div @click="calendarPopup" 
+            :class="['flex-1 flex flex-col items-center justify-center cursor-pointer', clickOnCalendar ? 'text-[#d44a7d]' : 'text-gray-700']">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6 mb-1">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
             </svg>
             <p class="text-xs">Calendar</p>
           </div>
-          <NuxtLink target="_blank" to="/rsvp" class="flex-1 cursor-pointer">
-          <div class="bg-[#FBFBFB] rounded-full w-20 h-20 flex items-center justify-center -mt-4 pb-1 shadow-[0_-10px_17px_rgba(0,0,0,0.05)]">
-            <div class="bg-[#D37B9C] hover:bg-[#E08FB0] rounded-full text-[#FEFEFE] w-16 h-16 flex flex-col items-center justify-center transition-all duration-200 ease-in-out">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6 mb-1">
-                <path stroke-linecap="round" stroke-l  inejoin="round" d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z" />
-              </svg>
-              <p class="text-[11px]">RSVP</p>
+
+          <NuxtLink target="_blank" to="/rsvp" class="flex-1 flex justify-center cursor-pointer">
+            <div class="bg-[#FBFBFB] rounded-full w-20 h-20 flex items-center justify-center -mt-4 pb-1 shadow-[0_-10px_17px_rgba(0,0,0,0.05)]">
+              <div class="bg-[#D37B9C] hover:bg-[#E08FB0] rounded-full text-[#FEFEFE] w-16 h-16 flex flex-col items-center justify-center transition-all duration-200 ease-in-out">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6 mb-1">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z" />
+                </svg>
+                <p class="text-[11px]">RSVP</p>
+              </div>
             </div>
-          </div>
           </NuxtLink>
-          <div 
-            @click="qrPopup" 
-            :class="[
-            'flex-1 cursor-pointer', clickOnQR ? 'text-[#d44a7d]' : 'text-gray-700',
-            ]">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6 ml-8 mb-1">
+
+          <div @click="qrPopup" 
+            :class="['flex-1 flex flex-col items-center justify-center cursor-pointer', clickOnQR ? 'text-[#d44a7d]' : 'text-gray-700']">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6 mb-1">
               <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
             </svg>
             <p class="text-xs">Gift</p>
           </div>
-          <div 
-            @click="locationPopup" 
-            :class="[
-            'flex-1 cursor-pointer', clickOnLocation ? 'text-[#d44a7d]' : 'text-gray-700',
-            ]">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6 ml-8 mb-1">
+
+          <div @click="locationPopup" 
+            :class="['flex-1 flex flex-col items-center justify-center cursor-pointer', clickOnLocation ? 'text-[#d44a7d]' : 'text-gray-700']">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6 mb-1">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
             </svg>
