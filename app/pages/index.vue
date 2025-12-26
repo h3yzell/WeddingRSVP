@@ -509,7 +509,7 @@ const startInfiniteScroll = () => {
                 </div>
               </div>
 
-              <img src="~/assets/images/qrCode.png" alt="QR Code" class="w-full h-full object-contain mb-2"/>
+              <img src="~/assets/images/QRCode.png" alt="QR Code" class="w-full h-full object-contain mb-2"/>
             </div>
 
             <div class="flex items-center mb-4">
