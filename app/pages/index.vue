@@ -159,10 +159,10 @@ const startInfiniteScroll = () => {
       >
         <!-- FIRST PAGE -->
         <section v-show="isOpened" class="
-          min-h-screen min-w-screen flex flex-col items-center justify-start tracking-[0.13rem] 
-          bg-local bg-position-[top_10px_center] bg-no-repeat bg-[url(~/assets/images/FloralDecoration.png)]
+          w-full flex flex-col items-center justify-start tracking-[0.13rem] pb-20
+          bg-local bg-position-[top_10px_center] bg-no-repeat bg-[url(~/assets/images/floralDecoration.png)]
         ">
-        <div class="mt-40">
+        <div class="mt-35">
           <h2 class="font-cinzelReg mt-5 text-[18px] text-[#A7943D] stagger animate-hidden">
             YOU ARE INVITED
           </h2>
