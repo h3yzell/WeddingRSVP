@@ -187,7 +187,7 @@ async function onSubmit() {
 <template>
     <Thankyou v-if="hasSubmitted" />
     <div v-if="!hasSubmitted" class="flex justify-center py-10 px-4 min-h-screen bg-[#F3F4F6]">
-        <div class="mx-auto max-w-3xl">
+        <div class="mx-auto">
             <div class="flex-col text-center mb-8 p-8 rounded-lg shadow-md bg-white">
                 <NuxtLink to="/" class="flex-1 cursor-pointer">
                 <!-- Header -->
@@ -416,7 +416,7 @@ async function onSubmit() {
                                     <polyline points="12 6 12 12 16 14"></polyline>
                                     </svg>
                                     <div class="grow">
-                                        <div class="text-sm text-gray-700">11:00 AM - 1:00 PM</div>
+                                        <div class="text-sm text-gray-700">11:00 AM - 1:30 PM</div>
                                         <div class="text-sm text-gray-600 font-medium mt-1">Reception</div>
                                         <div class="text-sm mt-1" :class="isReceptionFull ? 'text-red-500 font-medium' : 'text-gray-500'">
                                             {{ isReceptionFull ? 'FULLY BOOKED' : `${receptionSpots}/180 spots taken` }}
@@ -441,7 +441,7 @@ async function onSubmit() {
                     <p class="text-sm text-right text-gray-500">{{ form.wishes.length }}/240</p>
                 </div>
 
-                <!-- Digital Money Gift Section -->
+                <!-- Digital Money Gift Section 
                 <div class="bg-white p-6 rounded-lg shadow-sm mt-8 mb-4" style="opacity: 1; transform: none;">
                     <h3 class="text-xl font-medium text-gray-900 mb-4 text-center">Digital Money Gift</h3>
                     <p class="text-sm font-medium text-gray-700 mb-6 text-center">
@@ -459,6 +459,7 @@ async function onSubmit() {
                     </div>
                     <p class="text-sm text-gray-500 text-center">Scan the QR code</p>
                 </div>
+                -->
 
                 <!-- Submit Button -->
                 <button 

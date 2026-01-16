@@ -6,10 +6,10 @@ const isAttending = ref(localStorage.getItem('is_attending') === 'true');
 
 const timeSlots = {
   'Nikah': '9:00 AM — 11:00 AM',
-  'Reception': '11:00 AM — 1:00 PM'
+  'Reception': '11:00 AM — 1:30 PM'
 };
 
-const selectedTime = computed(() => timeSlots[submittedSlot.value] || '9:00 AM — 1:00 PM');
+const selectedTime = computed(() => timeSlots[submittedSlot.value] || '9:00 AM — 1:30 PM');
 async function saveAsPDF() {
   try {
     window.print();
