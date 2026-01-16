@@ -168,19 +168,19 @@ const locationPopup = () => {
                 <!-- THIRD PAGE -->
                 <section class="w-full flex flex-col items-center justify-start h-full mb-15">
                     <img src="~/assets/images/red-heart.png" class="mb-10 w-60 stagger animate-hidden">
-                    <h1 class="font-sloopScript text-3xl text-gray-900 mb-1 stagger animate-hidden px-5">Order of Events</h1>
+                    <h1 class="font-sloopScript text-3xl text-gray-900 mb-1 stagger animate-hidden px-10">Order of Events</h1>
                     <img src="~/assets/images/order-of-events.png" class="w-89 stagger animate-hidden">
                 </section>
 
                 <!-- FOURTH PAGE -->
                 <section class="w-full flex flex-col items-center justify-start h-full mb-20">
-                    <h1 class="font-sloopScript text-3xl text-gray-900 -mb-4 stagger animate-hidden px-5">Dress Code</h1>
+                    <h1 class="font-sloopScript text-3xl text-gray-900 -mb-4 stagger animate-hidden px-10">Dress Code</h1>
                     <img src="~/assets/images/dress-code.png" class="mb-20 w-80 stagger animate-hidden">
-                    
-                    <h1 class="font-sloopScript text-3xl text-gray-900 mb-7 stagger animate-hidden px-5">Happily Ever After Begins In</h1>
+
+                    <h1 class="font-sloopScript text-3xl text-gray-900 mb-7 stagger animate-hidden px-10">Happily Ever After Begins In</h1>
                     <NewTimer class="mb-20 stagger animate-hidden"/>
 
-                    <h1 class="font-sloopScript text-3xl text-gray-900 stagger animate-hidden px-5">Love Wishes</h1>
+                    <h1 class="font-sloopScript text-3xl text-gray-900 stagger animate-hidden px-10">Love Wishes</h1>
                     <section>
                         <UCarousel
                             class="max-w-md p-5 stagger animate-hidden"
