@@ -128,7 +128,7 @@ const locationPopup = () => {
 
             <!-- INVITATION PAGE -->
             <div class="
-                bg-[url(~/assets/images/pink-background-2.png)] bg-fixed bg-contain bg-center
+                bg-[url(~/assets/images/pink-background-2.png)] bg-fixed bg-size-[100%_100%] bg-center bg-no-repeat
                 min-h-screen w-screen max-w-md flex flex-col shadow-2xl transition-opacity duration-1000"
                 :class="{ 'opacity-100 z-10': isOpened, 'opacity-0 z-0': !isOpened }">
 
