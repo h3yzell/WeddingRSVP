@@ -28,8 +28,8 @@ const receptionSpots = computed(() => {
         .reduce((total, entry) => total + (entry.additionalGuests || 0), 0);
 })
 
-const nikahAvailable = computed(() => 120 - nikahSpots.value);
-const receptionAvailable = computed(() => 180 - receptionSpots.value);
+const nikahAvailable = computed(() => 110 - nikahSpots.value);
+const receptionAvailable = computed(() => 170 - receptionSpots.value);
 
 const isNikahFull = computed(() => nikahAvailable.value <=0);
 const isReceptionFull = computed(() => receptionAvailable.value <=0);
@@ -395,7 +395,7 @@ async function onSubmit() {
                                         <div class="text-sm text-gray-700">9:00 AM - 11:00 AM</div>
                                         <div class="text-sm text-gray-600 font-medium mt-1">Nikah</div>
                                         <div class="text-sm mt-1" :class="isNikahFull ? 'text-red-500 font-medium' : 'text-gray-500'">
-                                            {{ isNikahFull ? 'FULLY BOOKED' : `${nikahSpots}/120 spots taken` }}
+                                            {{ isNikahFull ? 'FULLY BOOKED' : `${nikahSpots}/110 spots taken` }}
                                         </div>
                                     </div>
                                 </div>
@@ -419,7 +419,7 @@ async function onSubmit() {
                                         <div class="text-sm text-gray-700">11:00 AM - 1:30 PM</div>
                                         <div class="text-sm text-gray-600 font-medium mt-1">Reception</div>
                                         <div class="text-sm mt-1" :class="isReceptionFull ? 'text-red-500 font-medium' : 'text-gray-500'">
-                                            {{ isReceptionFull ? 'FULLY BOOKED' : `${receptionSpots}/180 spots taken` }}
+                                            {{ isReceptionFull ? 'FULLY BOOKED' : `${receptionSpots}/170 spots taken` }}
                                         </div>
                                     </div>
                                 </div>
